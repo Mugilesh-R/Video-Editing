@@ -78,6 +78,31 @@
 </head>
 <body>
 
+<!-- Header with Navbar -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="favicon.png" width="40" height="40" class="d-inline-block align-top mr-2" alt="Logo">
+        <span>BrainwaysTech LLP</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#samples">Samples</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+ 
+
 <!-- Hero Video Section -->
 <div class="video-bg">
   <video autoplay muted loop>
@@ -91,7 +116,7 @@
 </div>
 
 <!-- Services Section -->
-<section class="services text-center">
+<section class="services text-center" id="services">
   <div class="container">
     <h2 class="mb-4">Our Video Editing Services</h2>
     <div class="row">
@@ -125,7 +150,7 @@
 
 
 <!-- Sample Videos Section -->
-<section class="samples text-center bg-light">
+<section class="samples text-center bg-light" id="samples">
   <div class="container">
     <h2 class="mb-4">Sample Works</h2>
     <div class="row">
@@ -159,6 +184,69 @@
     <a href="mailto:support@brainwaystech.in" class="btn btn-warning btn-lg px-4">Get a Free Quote</a>
   </div>
 </section>
+
+<!-- Contact Section -->
+<section class="py-5 bg-light" id="contact">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form id="whatsappForm" onsubmit="return sendToWhatsApp();">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="name">Your Name</label>
+          <input type="text" class="form-control" id="name" required placeholder="Enter your name">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="email">Your Email</label>
+          <input type="email" class="form-control" id="email" required placeholder="Enter your email">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="service">Type of Service You Need</label>
+        <select class="form-control" id="service" required>
+          <option value="">-- Select a Service --</option>
+          <option>Social Media Video Editing</option>
+          <option>Tutorial Video Editing</option>
+          <option>Event Highlight Editing</option>
+          <option>Corporate Video Editing</option>
+          <option>Vlog Editing</option>
+          <option>Green Screen Editing</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea class="form-control" id="message" rows="4" required placeholder="Describe your project or query"></textarea>
+      </div>
+      
+      <button type="submit" class="btn btn-success btn-lg btn-block">
+        Send via WhatsApp <i class="fab fa-whatsapp ml-1"></i>
+      </button>
+    </form>
+  </div>
+</section>
+
+<script>
+  function sendToWhatsApp() {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const service = document.getElementById("service").value;
+    const message = document.getElementById("message").value.trim();
+
+    const whatsappNumber = "917667924881"; // Your WhatsApp number (with country code)
+    const fullMessage =
+      `*New Inquiry from Website*%0A%0A` +
+      `*Name:* ${name}%0A` +
+      `*Email:* ${email}%0A` +
+      `*Service Needed:* ${service}%0A` +
+      `*Message:* ${message}`;
+
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURI(fullMessage)}`;
+    window.open(url, '_blank');
+
+    return false;
+  }
+</script>
 
 
 <!-- Footer -->
