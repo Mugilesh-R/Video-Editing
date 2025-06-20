@@ -18,7 +18,10 @@
       height: 100%;
       font-family: 'Segoe UI', sans-serif;
     }
-
+    .transparent-navbar {
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  transition: background-color 0.3s;
+    }
     .video-bg {
       position: relative;
       height: 100vh;
@@ -76,7 +79,7 @@
     }
 
     footer {
-      background-color: #111;
+      background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
       color: #ddd;
       padding: 30px 0;
       text-align: center;
@@ -98,11 +101,11 @@
 
 <!-- Header with Navbar -->
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top transparent-navbar">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="images/logo.png" width="40" height="40" class="d-inline-block align-top mr-2" alt="Logo">
-        <span>BrainwaysTech LLP</span>
+        <img src="images/logo.png" width="60" height="60" class="d-inline-block align-top mr-2" alt="Logo">
+        <span>Brainwaystech LLP</span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -124,7 +127,7 @@
 <!-- Hero Video Section -->
 <div class="video-bg">
   <video autoplay muted loop>
-    <source src="videos/banner.mp4" type="video/mp4">
+    <source src="videos/video2.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <div class="video-text">
