@@ -49,6 +49,24 @@
       padding: 60px 20px;
     }
 
+    .text-orange {
+  color: orange;
+    }
+
+    .service-box {
+  background-color: #fff;
+  border: 2px solid #ffa50033;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+  .service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+
     .samples video {
       width: 100%;
       height: auto;
@@ -82,7 +100,7 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
         <img src="images/logo.png" width="40" height="40" class="d-inline-block align-top mr-2" alt="Logo">
         <span>BrainwaysTech LLP</span>
       </a>
@@ -93,9 +111,9 @@
       
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#samples">Samples</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services" style="color:white;">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#samples" style="color:white;">Samples</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" style="color:white;">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -116,38 +134,56 @@
 </div>
 
 <!-- Services Section -->
-<section class="services text-center" id="services">
+<section class="services py-5 text-center" id="services">
   <div class="container">
-    <h2 class="mb-4">Our Video Editing Services</h2>
+    <h2 class="mb-5 text-orange">Our Video Editing Services</h2>
     <div class="row">
+      
       <div class="col-md-4 mb-4">
-        <h4>Social Media Video Editing</h4>
-        <p>Engaging short-form videos tailored for platforms like Instagram, YouTube Shorts, and TikTok.</p>
+        <div class="service-box p-4 h-100">
+          <h5>Social Media Video Editing</h5>
+          <p>Engaging short-form videos tailored for platforms like Instagram, YouTube Shorts, and TikTok.</p>
+        </div>
       </div>
+
       <div class="col-md-4 mb-4">
-        <h4>Tutorial Video Editing</h4>
-        <p>Clean, instructional edits with captions, screen overlays, and smooth transitions for educators and creators.</p>
+        <div class="service-box p-4 h-100">
+          <h5>Tutorial Video Editing</h5>
+          <p>Clean instructional edits with captions, overlays, and smooth transitions for educators and creators.</p>
+        </div>
       </div>
+
       <div class="col-md-4 mb-4">
-        <h4>Event Highlight Editing</h4>
-        <p>Wedding, birthday, or conference highlights turned into cinematic recap videos.</p>
+        <div class="service-box p-4 h-100">
+          <h5>Event Highlight Editing</h5>
+          <p>Wedding, birthday, or conference highlights turned into cinematic recap videos.</p>
+        </div>
       </div>
+
       <div class="col-md-4 mb-4">
-        <h4>Corporate Video Editing</h4>
-        <p>Polished videos for company profiles, product launches, and internal training.</p>
+        <div class="service-box p-4 h-100">
+          <h5>Corporate Video Editing</h5>
+          <p>Polished videos for company profiles, product launches, and internal training.</p>
+        </div>
       </div>
+
       <div class="col-md-4 mb-4">
-        <h4>Vlog Editing</h4>
-        <p>Dynamic edits for travel, lifestyle, or daily vlogs with music sync and color grading.</p>
+        <div class="service-box p-4 h-100">
+          <h5>Vlog Editing</h5>
+          <p>Dynamic edits for travel, lifestyle, or daily vlogs with music sync and color grading.</p>
+        </div>
       </div>
+
       <div class="col-md-4 mb-4">
-        <h4>Green Screen Editing</h4>
-        <p>Background replacement, keying effects, and motion tracking for advanced video content.</p>
+        <div class="service-box p-4 h-100">
+          <h5>Green Screen Editing</h5>
+          <p>Background replacement, keying effects, and motion tracking for advanced video content.</p>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
-
 
 <!-- Sample Videos Section -->
 <section class="samples text-center bg-light" id="samples">
@@ -156,13 +192,13 @@
     <div class="row">
       <div class="col-md-4">
         <video controls>
-          <source src="sample1.mp4" type="video/mp4">
+          <source src="videos/video1.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
       <div class="col-md-4">
         <video controls>
-          <source src="sample2.mp4" type="video/mp4">
+          <source src="videos/video2.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -260,11 +296,11 @@
 <footer>
   <div class="container">
     <p>BrainwaysTech LLP | Video Editing Services</p>
-    <p>Email: support@brainwaystech.in | Phone: +91-9876543210</p>
+    <p>Email: info@brainwaystechllp.com | Phone: +91-7667924881</p>
     <div class="social">
       <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/brainwaystech.ai/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/brainwaystech-llp/?viewAsMember=true"><i class="fab fa-linkedin"></i></a>
     </div>
   </div>
 </footer>
