@@ -233,20 +233,27 @@
     const service = document.getElementById("service").value;
     const message = document.getElementById("message").value.trim();
 
-    const whatsappNumber = "917667924881"; // Your WhatsApp number (with country code)
+    const whatsappNumber = "917667924881"; // Your WhatsApp number
+
+    // Create full message
     const fullMessage =
-      `*New Inquiry from Website*%0A%0A` +
-      `*Name:* ${name}%0A` +
-      `*Email:* ${email}%0A` +
-      `*Service Needed:* ${service}%0A` +
+      `New Inquiry from Website\n\n` +
+      `*Name:* ${name}\n` +
+      `*Email:* ${email}\n` +
+      `*Service Needed:* ${service}\n` +
       `*Message:* ${message}`;
 
-    const url = `https://wa.me/${whatsappNumber}?text=${encodeURI(fullMessage)}`;
+    // Encode it for URL
+    const encodedMessage = encodeURIComponent(fullMessage);
+
+    // Redirect to WhatsApp
+    const url = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
     window.open(url, '_blank');
 
     return false;
   }
 </script>
+
 
 
 <!-- Footer -->
