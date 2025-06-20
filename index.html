@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Editing Services - BrainwaysTech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <!-- Custom CSS -->
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .video-bg {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .video-bg video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .video-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+    }
+
+    .services, .samples {
+      padding: 60px 20px;
+    }
+
+    .samples video {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background-color: #111;
+      color: #ddd;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    footer .social i {
+      margin: 0 10px;
+      color: #ddd;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    footer .social i:hover {
+      color: #f39c12;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero Video Section -->
+<div class="video-bg">
+  <video autoplay muted loop>
+    <source src="background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="video-text">
+    <h1 class="display-4 font-weight-bold">Professional Video Editing</h1>
+    <p class="lead">Make your content cinematic and stunning with our expert editing services.</p>
+  </div>
+</div>
+
+<!-- Services Section -->
+<section class="services text-center">
+  <div class="container">
+    <h2 class="mb-4">Our Video Editing Services</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <h4>Social Media Video Editing</h4>
+        <p>Engaging short-form videos tailored for platforms like Instagram, YouTube Shorts, and TikTok.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h4>Tutorial Video Editing</h4>
+        <p>Clean, instructional edits with captions, screen overlays, and smooth transitions for educators and creators.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h4>Event Highlight Editing</h4>
+        <p>Wedding, birthday, or conference highlights turned into cinematic recap videos.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h4>Corporate Video Editing</h4>
+        <p>Polished videos for company profiles, product launches, and internal training.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h4>Vlog Editing</h4>
+        <p>Dynamic edits for travel, lifestyle, or daily vlogs with music sync and color grading.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h4>Green Screen Editing</h4>
+        <p>Background replacement, keying effects, and motion tracking for advanced video content.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Sample Videos Section -->
+<section class="samples text-center bg-light">
+  <div class="container">
+    <h2 class="mb-4">Sample Works</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <video controls>
+          <source src="sample1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="col-md-4">
+        <video controls>
+          <source src="sample2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="col-md-4">
+        <video controls>
+          <source src="sample3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call To Action Section -->
+<section class="text-center py-5 bg-dark text-white">
+  <div class="container">
+    <h2 class="mb-3">Ready to Transform Your Videos?</h2>
+    <p class="lead mb-4">Let’s turn your raw footage into stunning, professional content. Get a quote or reach out to us now!</p>
+    <a href="mailto:support@brainwaystech.in" class="btn btn-warning btn-lg px-4">Get a Free Quote</a>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>BrainwaysTech LLP | Video Editing Services</p>
+    <p>Email: support@brainwaystech.in | Phone: +91-9876543210</p>
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap 4 JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
